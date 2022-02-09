@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apps</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="frem">
+        <p>Apps</p>
+        <span style="--i:0;--x:-1;--y:0"><img src="./Calendar.svg" alt=""></span>
+        <span style="--i:1;--x:1;--y:0"><img src="./Camera.svg" alt=""></span>
+        <span style="--i:2;--x:0;--y:-1"><img src="./Chat.svg" alt=""></span>
+        <span style="--i:3;--x:0;--y:1"><img src="./Folder.svg" alt=""></span>
+        <span style="--i:4;--x:1;--y:1"><img src="./Locations.svg" alt=""></span>
+        <span style="--i:5;--x:-1;--y:-1"><img src="./Magnifier.svg" alt=""></span>
+        <span style="--i:6;--x:0;--y:0"><img src="./Messages.svg" alt=""></span>
+        <span style="--i:7;--x:-1;--y:1"><img src="./Notifications.svg" alt=""></span>
+        <span style="--i:8;--x:1;--y:-1"><img src="./Settings.svg" alt=""></span>
+    </div>
+</body>
+<script>
+    let frem = document.querySelector('.frem');
+    frem.onclick = function () {
+        frem.classList.toggle('active')
+    }
+</script>
+</html>

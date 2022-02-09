@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #10131c;
+}
+.frem{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background-color: #212532;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.8s;
+}
+.frem.active{
+    width: 200px;
+    height: 200px;
+    transition-delay: 0s;
+}
+.frem p{
+    position: absolute;
+    top: -45px;
+    color: white;
+    font-family: system-ui;
+    font-size: 26px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.frem.active p{
+    opacity: 1;
+}
+
+.frem span{
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: white;
+    border-radius: 50%;
+    transition: transform 0.5s, width 0.5s, height 0.5s, background 0.5s;
+    transform: translate(calc(12px * var(--x)), calc(12px * var(--y)));
+    transition-delay: calc(0.1s * var(--i));
+}
+.frem.active span{
+    width: 45px;
+    height: 45px;
+    background: #333849;
+    transform: translate(calc(60px * var(--x)), calc(60px * var(--y)));
+    
+}
+
+.frem img{
+    width: 0px;
+    transition: width 0.5s;
+}
+.frem.active img{
+    width: 44px;
+}
